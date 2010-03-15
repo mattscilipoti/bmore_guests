@@ -108,3 +108,5 @@ end
 
 # All that for this:
 Rails.boot!
+
+#require 'bundler_support/bundler_boot'
