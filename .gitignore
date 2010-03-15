@@ -1,6 +1,6 @@
 #Rails
 log/*.log
-tmp/**/*
+tmp
 config/database.yml
 
 #Rails Sqlite3 files
