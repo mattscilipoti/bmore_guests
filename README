@@ -1,6 +1,6 @@
 = Welcome to B'more Guests
 
-The premier site for ensuring guests are welcome in Baltimore (B'more)
+The premier site for ensuring guests are welcome in Baltimore, MD (B'more)
 
 == Developer Setup
   Uses bundler gem:
@@ -8,6 +8,10 @@ The premier site for ensuring guests are welcome in Baltimore (B'more)
 
   Features in cucumber.
   Specs in testunit.
+
+== Plugins used:
+ * http://github.com/nzkoz/rails_xss #replaces erb with erubis, escape by default
+
 
 == This is a Rails app, so standard info applies...
 

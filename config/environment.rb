@@ -41,6 +41,7 @@ Rails::Initializer.run do |config|
 
   config.time_zone = 'UTC'
 
+  config.gem 'erubis', :version => '2.6.5'
   config.gem 'haml', :version => '2.2.21'
   config.gem 'inherited_resources', :version => '1.0.3'
 end
