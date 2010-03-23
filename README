@@ -9,7 +9,7 @@ The premier site for ensuring guests are welcome in Baltimore, MD (B'more)
 
   Features in cucumber.
   Specs in testunit.
-  Uses compass and blueprint.
+  Uses compass and blueprint.  use `compass -w` for auto-compile.
 
 == Plugins used:
  * http://github.com/nzkoz/rails_xss #replaces erb with erubis, escape by default

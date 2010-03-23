@@ -10,6 +10,9 @@ db/*.db
 #IDE configs
 .idea
 
+#sass
+public/stylesheets/compiled
+
 #scm
 .svn
 
