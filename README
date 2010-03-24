@@ -13,6 +13,7 @@ The premier site for ensuring guests are welcome in Baltimore, MD (B'more)
 
 == Plugins used:
  * http://github.com/nzkoz/rails_xss #replaces erb with erubis, escape by default
+ * http://github.com/pedro/hassle # assists w/ sass on heroku
 
 
 == This is a Rails app, so standard info applies...
