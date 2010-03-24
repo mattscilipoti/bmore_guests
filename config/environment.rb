@@ -43,6 +43,6 @@ Rails::Initializer.run do |config|
 
   config.gem 'compass', :version => '0.8.17'
   config.gem 'erubis', :version => '2.6.5'
-  config.gem 'haml', :version => '>=2.2.0'
+  config.gem 'haml', :version => '2.2.16'
   config.gem 'inherited_resources', :version => '1.0.3'
 end
