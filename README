@@ -11,6 +11,9 @@ The premier site for ensuring guests are welcome in Baltimore, MD (B'more)
   Specs in testunit.
   Uses compass and blueprint.  use `compass -w` for auto-compile.
 
+  Hosting on Heroku
+    Unless you setup bundler09 support (for Rails 2.3.5), please update .gems file.
+
 == Plugins used:
  * http://github.com/nzkoz/rails_xss #replaces erb with erubis, escape by default
  * http://github.com/pedro/hassle # assists w/ sass on heroku
