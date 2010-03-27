@@ -1,4 +1,13 @@
-#guests
-  %h1 B'more Guests
-#ambassador
-  %h1 B'more Ambassadors
+- content_for :styles do
+  = stylesheet_link_tag 'compiled/welcome', :media => 'screen, projection'#, :cache => 'screen_cache'
+
+.two_col
+
+  #header
+    %h1 Baltimore
+
+  #content
+    #guests
+      =link_to 'Guests'
+    #ambassador
+      =link_to 'Ambassadors'

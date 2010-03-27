@@ -22,8 +22,9 @@ body.bp
 form.bp
   +blueprint-form
 
+
 // Page layout can be done using mixins applied to your semantic classes and IDs:
-body.three-col
+.three-col
   #container
     +container
   #header, #footer
@@ -38,3 +39,18 @@ body.three-col
     !content_columns = ceil(2 * !blueprint_grid_columns / 3)
     // true means it's the last column in the row
     +column(!content_columns, true)
+
+// two col values, use in layout
+  !blueprint_grid_columns = 8
+  !blueprint_grid_width = 40px
+
+.two-col
+  +container
+  background-color: #ccc
+  #header, #footer
+    +column(8)
+  #sidebar
+    +column(3)
+  #content
+    +column(5, true)
+

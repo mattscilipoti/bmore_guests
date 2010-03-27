@@ -4,5 +4,5 @@ Feature: In order to present a welcome page to guests and ambassadors
 
   Scenario: new user comes to app
     When I go to the homepage
-    Then I should see "B'more Guests"
-    And I should see "B'more Ambassadors"
+    Then I should see "Guests"
+    And I should see "Ambassadors"
