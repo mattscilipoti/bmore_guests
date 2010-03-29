@@ -3,5 +3,7 @@ rack  --version 1.0.1
 
 compass --version 0.8.17
 erubis --version 2.6.5
+formatastic --version 0.9.7
 haml --version 2.2.16
 inherited_resources --version 1.0.3
+validation_reflection --version 0.3.6

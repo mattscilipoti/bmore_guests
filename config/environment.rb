@@ -43,6 +43,8 @@ Rails::Initializer.run do |config|
 
   config.gem 'compass', :version => '0.8.17'
   config.gem 'erubis', :version => '2.6.5'
+  config.gem 'formtastic', :version => '0.9.7'
   config.gem 'haml', :version => '2.2.16'
   config.gem 'inherited_resources', :version => '1.0.3'
+  config.gem 'validation_reflection', :version => '0.3.6'
 end
