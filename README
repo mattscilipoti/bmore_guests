@@ -7,6 +7,9 @@ The premier site for ensuring guests are welcome in Baltimore, MD (B'more)
   $ gem install rails -v 2.3.5
   $ rake gems:install
 
+  Standard database.yml.
+  We support in-memory db.  See: config/example.database.yml
+
   Features in cucumber.
   Specs in testunit.
   Uses compass and blueprint.  use `compass -w` for auto-compile.
@@ -17,7 +20,7 @@ The premier site for ensuring guests are welcome in Baltimore, MD (B'more)
 == Plugins used:
  * http://github.com/nzkoz/rails_xss #replaces erb with erubis, escape by default
  * http://github.com/pedro/hassle # assists w/ sass on heroku
-
+ * http://github.com/mattscilipoti/memory_test_fix #for in-memory db
 
 == This is a Rails app, so standard info applies...
 
