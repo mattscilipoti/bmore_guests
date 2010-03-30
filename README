@@ -15,6 +15,7 @@ The premier site for ensuring guests are welcome in Baltimore, MD (B'more)
   Specs in testunit.
   Uses compass and blueprint.  use `compass -w` for auto-compile.
   Uses formtastic/validation_reflection.  I18n lookup is on by default. Check out en.yml.
+  Uses inherited_resources.
 
   Hosting on Heroku
     Please update .gems file.  Feel free to setup bundler09 support (for Rails 2.3.5).
