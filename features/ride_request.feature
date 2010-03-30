@@ -16,3 +16,21 @@ Feature: In order to Get to RailsConf from the Airport
     And the "Pickup at" field should contain "2010-04-01 11:12:00"
     And the "Email" field should contain "guest@example.com"
     And the "Phone" field should contain "808-555-1212"
+
+
+  Scenario Outline: Basic Ride Request (required fields)
+
+    When I go to the new Ride Request
+    And I fill in the following:
+      | Pickup at | <pickup_at> |
+      | Email     | <email>|
+
+    And I press "Don't Forget Me!"
+
+    Then I should see "<error_message>" within "<error_selector>"
+
+  Examples:
+    |pickup_at |email           |error_message |error_selector|
+    |          |test@example.com|can't be blank|#ride_request_pickup_at_input|
+    |2001-01-01|                |can't be blank|#ride_request_email_input|
+

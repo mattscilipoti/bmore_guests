@@ -51,3 +51,4 @@
 # Formtastic::SemanticFormHelper.builder = MyCustomBuilder
 
 Formtastic::SemanticFormBuilder.i18n_lookups_by_default = true
+Formtastic::SemanticFormBuilder.inline_errors = :sentence
