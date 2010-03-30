@@ -2,11 +2,12 @@
 
 %h1 Confirmation
 
-= translate :ride_request_success
+%h2= translate :ride_request_success
 
-- semantic_fields_for ride_request do |read_only|
-  - read_only.inputs "Your Info" do
-    - read_only_params = { :as => :string, :hint => '', :required => false, :input_html => { :class => 'read-only', :disabled => 'disabled'}}
-    = read_only.input :pickup_at, read_only_params.dup #dup required, formtastic adjusts params
-    = read_only.input :email, read_only_params.dup #dup required, formtastic adjusts params
-    = read_only.input :phone, read_only_params.dup #dup required, formtastic adjusts params
+- field_set_tag "Your Info", :class => 'formtastic container' do
+  - semantic_fields_for ride_request, :html => {:class => 'container'} do |read_only|
+    - read_only.inputs :class => 'read-only' do
+      - read_only_params = { :as => :string, :hint => '', :required => false, :input_html => { :class => 'read-only', :disabled => 'disabled'}}
+      = read_only.input :pickup_at, read_only_params.dup #dup required, formtastic adjusts params
+      = read_only.input :email, read_only_params.dup #dup required, formtastic adjusts params
+      = read_only.input :phone, read_only_params.dup #dup required, formtastic adjusts params

@@ -2,15 +2,15 @@
 # See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  ride_request_info: Just tell us when you are arriving and we'll make sure you get to Rails Conf.
+  ride_request_info: Just tell us when you are arriving.  We'll make sure you get to RailsConf 2010.
   ride_request_success: Glad to be of service.  You will receive a confirmation email shortly.
 
 
   formtastic:
     hints:
       ride_request:
-        email: For confirmation and communication.  No selly.
-        phone: In case of emergency.  Not required, but may save you a few hairs.
+        email: For confirmation and communication only.  Not shared.
+        phone: In case of emergency.  Not required, but may save you a few gray hairs.
         pickup_at: Date and Time
 
 #  formatastic EXAMPLES

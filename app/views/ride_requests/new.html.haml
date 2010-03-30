@@ -1,10 +1,12 @@
-.info
+%h1 Requesting a Ride from BWI?
+%h2.info
   =t :ride_request_info
 
-- semantic_form_for @ride_request do |form|
-  - form.inputs "Ride Info" do
-    = form.input :pickup_at, :as => :string
-    = form.input :email
-    = form.input :phone
-  - form.buttons do
-    = form.commit_button "Don't Forget Me!"
+- field_set_tag "Ride Info", :class => 'container' do
+  - semantic_form_for @ride_request do |form|
+    - form.inputs do
+      = form.input :pickup_at, :as => :string
+      = form.input :email
+      = form.input :phone
+    - form.buttons do
+      = form.commit_button "Don't Forget Me!"
