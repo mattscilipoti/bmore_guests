@@ -1,0 +1,10 @@
+- ride_request ||= @ride_request
+
+%h1 Confirmation
+
+= translate :ride_request_success
+
+- semantic_fields_for ride_request do |read_only|
+  = read_only.input :pickup_at, :as => :string
+  = read_only.input :email
+  = read_only.input :phone

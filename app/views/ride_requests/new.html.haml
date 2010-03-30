@@ -1,0 +1,8 @@
+.info
+  =t :ride_request_info
+- semantic_form_for @ride_request do |form|
+  = form.input :pickup_at, :as => :string
+  = form.input :email
+  = form.input :phone
+  - form.buttons do
+    = form.commit_button "Don't Forget Me!"

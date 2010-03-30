@@ -42,5 +42,6 @@ ActionController::Routing::Routes.draw do |map|
 #  map.connect ':controller/:action/:id.:format'
 
   map.resource :welcome, :controller => 'welcome'
+  map.resources :ride_requests
   map.root :controller => "welcome"
 end

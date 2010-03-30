@@ -13,4 +13,6 @@ Feature: In order to Get to RailsConf from the Airport
     And I press "Don't Forget Me!"
 
     Then I should see "You will receive a confirmation"
-    And the "pickup at" field should contain  "2010/04/01 11:12"
+    And the "Pickup at" field should contain "2010-04-01 11:12:00"
+    And the "Email" field should contain "guest@example.com"
+    And the "Phone" field should contain "808-555-1212"

@@ -6,6 +6,7 @@ The premier site for ensuring guests are welcome in Baltimore, MD (B'more)
   Utilizes Ruby on Rails v2.3.5.
   $ gem install rails -v 2.3.5
   $ rake gems:install
+  $ rake  #runs all tests/features
 
   Standard database.yml.
   We support in-memory db.  See: config/example.database.yml
@@ -13,9 +14,10 @@ The premier site for ensuring guests are welcome in Baltimore, MD (B'more)
   Features in cucumber.
   Specs in testunit.
   Uses compass and blueprint.  use `compass -w` for auto-compile.
+  Uses formtastic/validation_reflection.  I18n lookup is on by default. Check out en.yml.
 
   Hosting on Heroku
-    Unless you setup bundler09 support (for Rails 2.3.5), please update .gems file.
+    Please update .gems file.  Feel free to setup bundler09 support (for Rails 2.3.5).
 
 == Plugins used:
  * http://github.com/nzkoz/rails_xss #replaces erb with erubis, escape by default
